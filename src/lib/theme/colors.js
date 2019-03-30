@@ -40,6 +40,7 @@ export const text08 = "#cccccc";
 export const text09 = "#4a90e2";
 export const text10 = "#91da7e";
 export const text11 = "#e6e9ee";
+export const text12 = "#e1e1e1";
 
 
 // Redes Sociais
@@ -58,3 +59,10 @@ export const ui02 = "#f4f7fb";
 export const line01 = "#dfe3e6";
 export const line02 = "#ced1d7";
 export const line03 = "#d8d8d8";
+
+// RGBA
+export const rg01 = "rgba(0, 187, 193, 0.15)";
+export const rg02 = "rgba(107, 193, 0, 0.1)";
+export const rg03 = "rgba(107, 193, 0, 0.72)";
+export const rg04 = "rgba(35, 34, 39, 0.1)";
+export const rg05 = "rgba(0, 0, 0, .125)";

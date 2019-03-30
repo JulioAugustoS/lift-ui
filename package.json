@@ -34,5 +34,14 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "dependencies": {
+    "@restart/context": "^2.1.4",
+    "@restart/hooks": "^0.2.3",
+    "classnames": "^2.2.6",
+    "dom-helpers": "^3.4.0",
+    "prop-types": "^15.7.2",
+    "prop-types-extra": "^1.1.0",
+    "react-transition-group": "^2.7.1"
+  }
 }
