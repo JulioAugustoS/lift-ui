@@ -1,6 +1,6 @@
 {
   "name": "lift-ui",
-  "version": "1.0.1-beta.2",
+  "version": "1.0.1-beta.3",
   "main": "dist/index.js",
   "module": "dist/index.js",
   "private": false,
@@ -11,9 +11,6 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/JulioAugustoS/lift-ui.git"
-  },
-  "author": {
-
   },
   "scripts": {
     "start": "react-scripts start",
