@@ -2,8 +2,36 @@ import styled from '@emotion/styled';
 import { css } from '@emotion/core';
 
 // Colors
-import { primary, primaryHover, focusPrimary, focusSuccess, success, successHover, warningHover, warning, focusWarning, danger, dangerHover, focusDanger, info, infoHover, focusInfo, dark, darkHover, focusDark, light, focusLight, lightHover, text04, text01, link, linkHover, text02 } from '../../theme/colors';
+import { 
+  primary, 
+  primaryHover, 
+  focusPrimary, 
+  focusSuccess, 
+  success, 
+  successHover, 
+  warningHover, 
+  warning, 
+  focusWarning, 
+  danger, 
+  dangerHover, 
+  focusDanger, 
+  info, 
+  infoHover, 
+  focusInfo, 
+  dark, 
+  darkHover, 
+  focusDark, 
+  light, 
+  focusLight, 
+  lightHover, 
+  text04, 
+  text01, 
+  link, 
+  linkHover, 
+  text02 
+} from '../../theme/colors';
 
+// Base Button
 export const StyledButton = styled.button`
   min-height: 1em;
   display: inline-block;
@@ -90,12 +118,12 @@ export const StyledButton = styled.button`
 // Theme Primary
 const primaryTheme = css`
   background-color: ${primary};
-  border-top: 2px solid ${primaryHover};
+  border-bottom: 2px solid ${primaryHover};
   color: ${text04};
 
   &:hover {
     background-color: ${primaryHover};
-    border-top: 2px solid ${primary};
+    border-bottom: 2px solid ${primary};
   }
 
   &:focus {
@@ -105,7 +133,7 @@ const primaryTheme = css`
 
   &:disabled {
     background-color: ${primary};
-    border-top: 2px solid ${primaryHover};
+    border-bottom: 2px solid ${primaryHover};
     cursor: no-drop;
     opacity: .65;
 
@@ -118,12 +146,12 @@ const primaryTheme = css`
 // Theme Success
 const successTheme = css`
   background-color: ${success};
-  border-top: 2px solid ${successHover};
+  border-bottom: 2px solid ${successHover};
   color: ${text04};
 
   &:hover {
     background-color: ${successHover};
-    border-top: 2px solid ${success};
+    border-bottom: 2px solid ${success};
   }
 
   &:focus {
@@ -133,7 +161,7 @@ const successTheme = css`
 
   &:disabled {
     background-color: ${success};
-    border-top: 2px solid ${successHover};
+    border-bottom: 2px solid ${successHover};
     cursor: no-drop;
     opacity: .65;
 
@@ -146,12 +174,12 @@ const successTheme = css`
 // Theme Warning
 const warningTheme = css`
   background-color: ${warning};
-  border-top: 2px solid ${warningHover};
+  border-bottom: 2px solid ${warningHover};
   color: ${text01};
 
   &:hover {
     background-color: ${warningHover};
-    border-top: 2px solid ${warning};
+    border-bottom: 2px solid ${warning};
   }
 
   &:focus {
@@ -161,7 +189,7 @@ const warningTheme = css`
 
   &:disabled {
     background-color: ${warning};
-    border-top: 2px solid ${warningHover};
+    border-bottom: 2px solid ${warningHover};
     cursor: no-drop;
     opacity: .65;
 
@@ -174,12 +202,12 @@ const warningTheme = css`
 // Theme Danger
 const dangerTheme = css`
   background-color: ${danger};
-  border-top: 2px solid ${dangerHover};
+  border-bottom: 2px solid ${dangerHover};
   color: ${text04};
 
   &:hover {
     background-color: ${dangerHover};
-    border-top: 2px solid ${danger};
+    border-bottom: 2px solid ${danger};
   }
 
   &:focus {
@@ -189,7 +217,7 @@ const dangerTheme = css`
 
   &:disabled {
     background-color: ${danger};
-    border-top: 2px solid ${dangerHover};
+    border-bottom: 2px solid ${dangerHover};
     cursor: no-drop;
     opacity: .65;
 
@@ -202,12 +230,12 @@ const dangerTheme = css`
 // Theme Info
 const infoTheme = css`
   background-color: ${info};
-  border-top: 2px solid ${infoHover};
+  border-bottom: 2px solid ${infoHover};
   color: ${text04};
 
   &:hover {
     background-color: ${infoHover};
-    border-top: 2px solid ${info};
+    border-bottom: 2px solid ${info};
   }
 
   &:focus {
@@ -217,7 +245,7 @@ const infoTheme = css`
 
   &:disabled {
     background-color: ${info};
-    border-top: 2px solid ${infoHover};
+    border-bottom: 2px solid ${infoHover};
     cursor: no-drop;
     opacity: .65;
 
@@ -230,12 +258,12 @@ const infoTheme = css`
 // Theme Light
 const lightTheme = css`
   background-color: ${light};
-  border-top: 2px solid ${lightHover};
+  border-bottom: 2px solid ${lightHover};
   color: ${text01};
 
   &:hover {
     background-color: ${lightHover};
-    border-top: 2px solid ${light};
+    border-bottom: 2px solid ${light};
   }
 
   &:focus {
@@ -245,7 +273,7 @@ const lightTheme = css`
 
   &:disabled {
     background-color: ${light};
-    border-top: 2px solid ${lightHover};
+    border-bottom: 2px solid ${lightHover};
     cursor: no-drop;
     opacity: .65;
 
@@ -258,12 +286,12 @@ const lightTheme = css`
 // Theme Dark
 const darkTheme = css`
   background-color: ${dark};
-  border-top: 2px solid ${darkHover};
+  border-bottom: 2px solid ${darkHover};
   color: ${text04};
 
   &:hover {
     background-color: ${darkHover};
-    border-top: 2px solid ${dark};
+    border-bottom: 2px solid ${dark};
   }
 
   &:focus {
@@ -273,7 +301,7 @@ const darkTheme = css`
 
   &:disabled {
     background-color: ${dark};
-    border-top: 2px solid ${darkHover};
+    border-bottom: 2px solid ${darkHover};
     cursor: no-drop;
     opacity: .65;
 
@@ -309,15 +337,15 @@ const linkTheme = css`
 
 // Outline Theme Primary
 const primaryOutline = css`
-  border-top: 2px solid ${primaryHover};
+  border-top: 1px solid ${primary};
   border-left: 1px solid ${primary};
   border-right: 1px solid ${primary};
-  border-bottom: 1px solid ${primary};
+  border-bottom: 2px solid ${primaryHover};
   color: ${primary};
 
   &:hover {
     background-color: ${primaryHover};
-    border-top: 2px solid ${primary};
+    border-bottom: 2px solid ${primary};
     color: ${text04};
   }
 
@@ -327,10 +355,10 @@ const primaryOutline = css`
   }
 
   &:disabled {
-    border-top: 2px solid ${primaryHover};
+    border-top: 1px solid ${primary};
     border-left: 1px solid ${primary};
     border-right: 1px solid ${primary};
-    border-bottom: 1px solid ${primary};
+    border-bottom: 2px solid ${primaryHover};
     color: ${primary};
     cursor: no-drop;
     opacity: .65;
@@ -343,15 +371,15 @@ const primaryOutline = css`
 
 // Outline Theme Success
 const successOutline = css`
-  border-top: 2px solid ${successHover};
+  border-top: 1px solid ${success};
   border-left: 1px solid ${success};
   border-right: 1px solid ${success};
-  border-bottom: 1px solid ${success};
+  border-bottom: 2px solid ${successHover};
   color: ${success};
 
   &:hover {
     background-color: ${successHover};
-    border-top: 2px solid ${success};
+    border-bottom: 2px solid ${success};
     color: ${text04};
   }
 
@@ -361,10 +389,10 @@ const successOutline = css`
   }
 
   &:disabled {
-    border-top: 2px solid ${successHover};
+    border-top: 1px solid ${success};
     border-left: 1px solid ${success};
     border-right: 1px solid ${success};
-    border-bottom: 1px solid ${success};
+    border-bottom: 2px solid ${successHover};
     color: ${success};
     cursor: no-drop;
     opacity: .65;
@@ -377,15 +405,15 @@ const successOutline = css`
 
 // Outline Theme Warning
 const warningOutline = css`
-  border-top: 2px solid ${warningHover};
+  border-top: 1px solid ${warning};
   border-left: 1px solid ${warning};
   border-right: 1px solid ${warning};
-  border-bottom: 1px solid ${warning};
+  border-bottom: 2px solid ${warningHover};
   color: ${warning};
 
   &:hover {
     background-color: ${warningHover};
-    border-top: 2px solid ${warning};
+    border-bottom: 2px solid ${warning};
     color: ${text04};
   }
 
@@ -395,10 +423,10 @@ const warningOutline = css`
   }
 
   &:disabled {
-    border-top: 2px solid ${warningHover};
+    border-top: 1px solid ${warning};
     border-left: 1px solid ${warning};
     border-right: 1px solid ${warning};
-    border-bottom: 1px solid ${warning};
+    border-bottom: 2px solid ${warningHover};
     color: ${warning};
     cursor: no-drop;
     opacity: .65;
@@ -411,15 +439,15 @@ const warningOutline = css`
 
 // Outline Theme Danger
 const dangerOutline = css`
-  border-top: 2px solid ${dangerHover};
+  border-top: 1px solid ${danger};
   border-left: 1px solid ${danger};
   border-right: 1px solid ${danger};
-  border-bottom: 1px solid ${danger};
+  border-bottom: 2px solid ${dangerHover};
   color: ${danger};
 
   &:hover {
     background-color: ${dangerHover};
-    border-top: 2px solid ${danger};
+    border-bottom: 2px solid ${danger};
     color: ${text04};
   }
 
@@ -429,10 +457,10 @@ const dangerOutline = css`
   }
 
   &:disabled {
-    border-top: 2px solid ${dangerHover};
+    border-top: 1px solid ${danger};
     border-left: 1px solid ${danger};
     border-right: 1px solid ${danger};
-    border-bottom: 1px solid ${danger};
+    border-bottom: 2px solid ${dangerHover};
     color: ${danger};
     cursor: no-drop;
     opacity: .65;
@@ -445,15 +473,15 @@ const dangerOutline = css`
 
 // Outline Theme Info
 const infoOutline = css`
-  border-top: 2px solid ${infoHover};
+  border-top: 1px solid ${info};
   border-left: 1px solid ${info};
   border-right: 1px solid ${info};
-  border-bottom: 1px solid ${info};
+  border-bottom: 2px solid ${infoHover};
   color: ${info};
 
   &:hover {
     background-color: ${infoHover};
-    border-top: 2px solid ${info};
+    border-bottom: 2px solid ${info};
     color: ${text04};
   }
 
@@ -463,10 +491,10 @@ const infoOutline = css`
   }
 
   &:disabled {
-    border-top: 2px solid ${infoHover};
+    border-top: 1px solid ${info};
     border-left: 1px solid ${info};
     border-right: 1px solid ${info};
-    border-bottom: 1px solid ${info};
+    border-bottom: 1px solid ${infoHover};
     color: ${info};
     cursor: no-drop;
     opacity: .65;
@@ -479,15 +507,15 @@ const infoOutline = css`
 
 // Outline Theme Light
 const lightOutline = css`
-  border-top: 2px solid ${lightHover};
+  border-top: 1px solid ${light};
   border-left: 1px solid ${light};
   border-right: 1px solid ${light};
-  border-bottom: 1px solid ${light};
+  border-bottom: 2px solid ${lightHover};
   color: ${text01};
 
   &:hover {
     background-color: ${lightHover};
-    border-top: 2px solid ${light};
+    border-bottom: 2px solid ${light};
     color: ${text01};
   }
 
@@ -497,10 +525,10 @@ const lightOutline = css`
   }
 
   &:disabled {
-    border-top: 2px solid ${lightHover};
+    border-top: 1px solid ${light};
     border-left: 1px solid ${light};
     border-right: 1px solid ${light};
-    border-bottom: 1px solid ${light};
+    border-bottom: 2px solid ${lightHover};
     color: ${text01};
     cursor: no-drop;
     opacity: .65;
@@ -513,15 +541,15 @@ const lightOutline = css`
 
 // Outline Theme Light
 const darkOutline = css`
-  border-top: 2px solid ${darkHover};
+  border-top: 1px solid ${dark};
   border-left: 1px solid ${dark};
   border-right: 1px solid ${dark};
-  border-bottom: 1px solid ${dark};
+  border-bottom: 2px solid ${darkHover};
   color: ${text01};
 
   &:hover {
     background-color: ${darkHover};
-    border-top: 2px solid ${dark};
+    border-bottom: 2px solid ${dark};
     color: ${text04};
   }
 
@@ -531,10 +559,10 @@ const darkOutline = css`
   }
 
   &:disabled {
-    border-top: 2px solid ${darkHover};
+    border-top: 1px solid ${dark};
     border-left: 1px solid ${dark};
     border-right: 1px solid ${dark};
-    border-bottom: 1px solid ${dark};
+    border-bottom: 2px solid ${darkHover};
     color: ${text01};
     cursor: no-drop;
     opacity: .65;
