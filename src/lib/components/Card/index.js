@@ -33,7 +33,7 @@ const propTypes = {
   /**
    * Add a content on the card footer
    */
-  footer: PropTypes.elementType,
+  footer: PropTypes.object,
 
   /**
    * Align the content the footer of card

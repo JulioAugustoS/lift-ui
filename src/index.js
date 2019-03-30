@@ -1,11 +1,11 @@
 import React from 'react';
 import { render } from "react-dom";
-import { Button, Alert, Card } from "./lib/components";
+import { Button, Alert, Card, Row, Container } from "./lib/components";
 
 const App = () => (
-  <div style={{ width: 1200, margin: "15px auto" }}>
+  <Container>
     <h1>Alerts</h1>
-    <div style={{ width: 600 }}>
+    <div>
       { 
         [
           'primary',
@@ -27,7 +27,7 @@ const App = () => (
     <br /><br />
 
     <h1>Alert - Dismissing</h1>
-    <div style={{ width: 600 }}>
+    <div>
       <Alert 
         theme="danger"
         text="Oh snap! You got an error!"
@@ -60,22 +60,39 @@ const App = () => (
     <br /><br />
     
     <h1>Card</h1>
-    <Card
-      width="286px"
-      img="https://via.placeholder.com/286x180"
-      textAlign="center"
-      footerAlign="center"
-      title="Card Title"
-      subtitle="Card Subtitle"
-      text="Some quick example text to build on the card title and make up the bulk of the card's content."
-      footer={
-        <div>
-          <Button theme="dark">Enviar</Button> 
-          <Button theme="link">Salvar</Button> 
-        </div>
-      }
-    />
-  </div>
+    <Row>
+      <Card
+        width="286px"
+        img="https://via.placeholder.com/286x180"
+        textAlign="center"
+        footerAlign="center"
+        title="Card Title"
+        subtitle="Card Subtitle"
+        text="Some quick example text to build on the card title and make up the bulk of the card's content."
+        footer={
+          <div>
+            <Button theme="dark">Enviar</Button> 
+            <Button theme="link">Salvar</Button> 
+          </div>
+        }
+      />
+      <Card
+        width="286px"
+        img="https://via.placeholder.com/286x180"
+        textAlign="center"
+        footerAlign="center"
+        title="Card Title"
+        subtitle="Card Subtitle"
+        text="Some quick example text to build on the card title and make up the bulk of the card's content."
+        footer={
+          <div>
+            <Button theme="dark">Enviar</Button> 
+            <Button theme="link">Salvar</Button> 
+          </div>
+        }
+      />
+    </Row>
+  </Container>
 );
 
 render(<App />, document.getElementById("root"));

@@ -34,6 +34,8 @@ export const CardComponent = styled.div`
   border-radius: 5px;
   background-clip: border-box;
   width: ${props => props.width};
+  margin-right: 10px;
+  margin-left: 10px;
 
   ${FourDp};
 `;
