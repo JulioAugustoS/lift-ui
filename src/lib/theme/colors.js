@@ -1,33 +1,32 @@
 // Primarias
 export const primary    = "#3498db";
 export const success    = "#2ecc71";
-export const warning    = "";
-export const danger     = "";
-export const info       = "";
-export const light      = "";
-export const dark       = "";
-
-// Suporte
-export const sup01 = "#7ed321";
-export const sup02 = "#ff6071";
-export const sup03 = "#fac54e";
+export const warning    = "#f1c40f";
+export const danger     = "#e74c3c";
+export const info       = "#48dbfb";
+export const light      = "#ecf0f1";
+export const dark       = "#34495e";
+export const link       = "#007bff";
 
 // Primarias Hover
 export const primaryHover = "#2980b9";
 export const successHover = "#27ae60"; 
-
-// Suport Hover
-export const supHover01 = "#6db71c";
-export const supHover02 = "#e04757";
-export const supHover03 = "#ddac3e";
-export const supHover04 = "#444547";
+export const warningHover = "#f39c12"
+export const dangerHover  = "#c0392b";
+export const infoHover    = "#0abde3";
+export const lightHover   = "#bdc3c7";
+export const darkHover    = "#2c3e50";
+export const linkHover    = "#0056b3";
 
 // Focus
 export const focusPrimary = "rgba(38,143,255,.5)";
 export const focusSuccess = "rgba(72,180,97,.5)";
+export const focusWarning = "rgba(222,170,12,.5)";
+export const focusDanger  = "rgba(225,83,97,.5)";
+export const focusInfo    = "rgba(58,176,195,.5)";
+export const focusLight   = "rgba(216,217,219,.5)";
+export const focusDark    = "rgba(82,88,93,.5)";
 
-// Table Hover
-export const tableHover = "#edeff4";
 
 // Textos
 export const text01 = "#434f5f";
@@ -42,8 +41,6 @@ export const text09 = "#4a90e2";
 export const text10 = "#91da7e";
 export const text11 = "#e6e9ee";
 
-// Icons
-export const heart = "#e74c3c";
 
 // Redes Sociais
 export const facebook = "#3b5998";
@@ -52,21 +49,12 @@ export const linkedin = "#007bb6";
 export const instagram = "#517fa4";
 export const whatsapp = "#34af23";
 
-// Tag
-export const tag = "#00bbc1";
 
 // User Interface
 export const ui01 = "#ffffff";
 export const ui02 = "#f4f7fb";
 
-// RGBA
-export const rg01 = "rgba(0, 187, 193, 0.15)";
-export const rg02 = "rgba(107, 193, 0, 0.1)";
-export const rg03 = "rgba(107, 193, 0, 0.72)";
-export const rg04 = "rgba(35, 34, 39, 0.1)";
-
 // Lines
 export const line01 = "#dfe3e6";
 export const line02 = "#ced1d7";
 export const line03 = "#d8d8d8";
-export const line04 = "#5ba400";
